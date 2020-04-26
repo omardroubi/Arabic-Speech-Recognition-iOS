@@ -1,2 +1,2 @@
 # ArabicSpeechRecognition iOS
-Swift Implementation of Speech Recognition using Speech and AVFoundation
+Swift Implementation of Speech Recognition using SpeechKit, CoreML and AVFoundation
