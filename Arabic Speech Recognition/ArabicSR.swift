@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import Speech
 
-class ViewController: UIViewController, SFSpeechRecognizerDelegate {
+class ArabicSR: UIViewController, SFSpeechRecognizerDelegate {
 
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?

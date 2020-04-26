@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		36BB2F4224561AED000B7DC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB2F4124561AED000B7DC4 /* AppDelegate.swift */; };
 		36BB2F4424561AED000B7DC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB2F4324561AED000B7DC4 /* SceneDelegate.swift */; };
-		36BB2F4624561AED000B7DC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB2F4524561AED000B7DC4 /* ViewController.swift */; };
+		36BB2F4624561AED000B7DC4 /* ArabicSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB2F4524561AED000B7DC4 /* ArabicSR.swift */; };
 		36BB2F4924561AED000B7DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36BB2F4724561AED000B7DC4 /* Main.storyboard */; };
 		36BB2F4B24561AED000B7DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36BB2F4A24561AED000B7DC4 /* Assets.xcassets */; };
 		36BB2F4E24561AED000B7DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36BB2F4C24561AED000B7DC4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		36BB2F3E24561AED000B7DC4 /* Arabic Speech Recognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arabic Speech Recognition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36BB2F3E24561AED000B7DC4 /* Arabic SR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arabic SR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BB2F4124561AED000B7DC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36BB2F4324561AED000B7DC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		36BB2F4524561AED000B7DC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36BB2F4524561AED000B7DC4 /* ArabicSR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArabicSR.swift; sourceTree = "<group>"; };
 		36BB2F4824561AED000B7DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36BB2F4A24561AED000B7DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36BB2F4D24561AED000B7DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		36BB2F3F24561AED000B7DC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36BB2F3E24561AED000B7DC4 /* Arabic Speech Recognition.app */,
+				36BB2F3E24561AED000B7DC4 /* Arabic SR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,7 +58,7 @@
 			children = (
 				36BB2F4124561AED000B7DC4 /* AppDelegate.swift */,
 				36BB2F4324561AED000B7DC4 /* SceneDelegate.swift */,
-				36BB2F4524561AED000B7DC4 /* ViewController.swift */,
+				36BB2F4524561AED000B7DC4 /* ArabicSR.swift */,
 				36BB2F4724561AED000B7DC4 /* Main.storyboard */,
 				36BB2F4A24561AED000B7DC4 /* Assets.xcassets */,
 				36BB2F4C24561AED000B7DC4 /* LaunchScreen.storyboard */,
@@ -84,7 +84,7 @@
 			);
 			name = "Arabic Speech Recognition";
 			productName = "Arabic Speech Recognition";
-			productReference = 36BB2F3E24561AED000B7DC4 /* Arabic Speech Recognition.app */;
+			productReference = 36BB2F3E24561AED000B7DC4 /* Arabic SR.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36BB2F4624561AED000B7DC4 /* ViewController.swift in Sources */,
+				36BB2F4624561AED000B7DC4 /* ArabicSR.swift in Sources */,
 				36BB2F4224561AED000B7DC4 /* AppDelegate.swift in Sources */,
 				36BB2F4424561AED000B7DC4 /* SceneDelegate.swift in Sources */,
 			);
@@ -292,7 +292,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "omardroubi.Arabic-Speech-Recognition";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Arabic SR";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +310,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "omardroubi.Arabic-Speech-Recognition";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Arabic SR";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
