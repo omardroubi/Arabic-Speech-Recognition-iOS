@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36A7F29F24579B6600A6D411 /* FaceLandmarksDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7F29E24579B6600A6D411 /* FaceLandmarksDetector.swift */; };
+		36A7F2A124579B8200A6D411 /* UIImage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7F2A024579B8100A6D411 /* UIImage+Scale.swift */; };
+		36A7F2A324579B9300A6D411 /* LipReadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7F2A224579B9300A6D411 /* LipReadingVC.swift */; };
+		36A7F2A524579DFB00A6D411 /* VoiceRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7F2A424579DFB00A6D411 /* VoiceRecognitionViewController.swift */; };
+		36A7F2A724579E6300A6D411 /* LipReadingModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 36A7F2A624579E6300A6D411 /* LipReadingModel.mlmodel */; };
 		36BB2F4224561AED000B7DC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB2F4124561AED000B7DC4 /* AppDelegate.swift */; };
 		36BB2F4424561AED000B7DC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB2F4324561AED000B7DC4 /* SceneDelegate.swift */; };
 		36BB2F4624561AED000B7DC4 /* ArabicSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB2F4524561AED000B7DC4 /* ArabicSR.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36A7F29E24579B6600A6D411 /* FaceLandmarksDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceLandmarksDetector.swift; sourceTree = "<group>"; };
+		36A7F2A024579B8100A6D411 /* UIImage+Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Scale.swift"; sourceTree = "<group>"; };
+		36A7F2A224579B9300A6D411 /* LipReadingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LipReadingVC.swift; sourceTree = "<group>"; };
+		36A7F2A424579DFB00A6D411 /* VoiceRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecognitionViewController.swift; sourceTree = "<group>"; };
+		36A7F2A624579E6300A6D411 /* LipReadingModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = LipReadingModel.mlmodel; sourceTree = "<group>"; };
 		36BB2F3E24561AED000B7DC4 /* Arabic SR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arabic SR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BB2F4124561AED000B7DC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36BB2F4324561AED000B7DC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,10 +66,15 @@
 		36BB2F4024561AED000B7DC4 /* Arabic Speech Recognition */ = {
 			isa = PBXGroup;
 			children = (
+				36A7F2A624579E6300A6D411 /* LipReadingModel.mlmodel */,
 				36BB2F4124561AED000B7DC4 /* AppDelegate.swift */,
+				36A7F29E24579B6600A6D411 /* FaceLandmarksDetector.swift */,
 				36BB2F4324561AED000B7DC4 /* SceneDelegate.swift */,
+				36A7F2A024579B8100A6D411 /* UIImage+Scale.swift */,
+				36A7F2A224579B9300A6D411 /* LipReadingVC.swift */,
 				36BB2F4524561AED000B7DC4 /* ArabicSR.swift */,
 				36BB2F4724561AED000B7DC4 /* Main.storyboard */,
+				36A7F2A424579DFB00A6D411 /* VoiceRecognitionViewController.swift */,
 				36BB2F4A24561AED000B7DC4 /* Assets.xcassets */,
 				36BB2F4C24561AED000B7DC4 /* LaunchScreen.storyboard */,
 				36BB2F4F24561AED000B7DC4 /* Info.plist */,
@@ -138,8 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A7F2A324579B9300A6D411 /* LipReadingVC.swift in Sources */,
+				36A7F29F24579B6600A6D411 /* FaceLandmarksDetector.swift in Sources */,
 				36BB2F4624561AED000B7DC4 /* ArabicSR.swift in Sources */,
 				36BB2F4224561AED000B7DC4 /* AppDelegate.swift in Sources */,
+				36A7F2A124579B8200A6D411 /* UIImage+Scale.swift in Sources */,
+				36A7F2A724579E6300A6D411 /* LipReadingModel.mlmodel in Sources */,
+				36A7F2A524579DFB00A6D411 /* VoiceRecognitionViewController.swift in Sources */,
 				36BB2F4424561AED000B7DC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "omardroubi.Arabic-Speech-Recognition";
 				PRODUCT_NAME = "Arabic SR";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "omardroubi.Arabic-Speech-Recognition";
 				PRODUCT_NAME = "Arabic SR";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
