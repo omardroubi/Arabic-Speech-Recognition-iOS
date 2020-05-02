@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36376111245C799700D5538D /* ArabicSpelling.txt in Resources */ = {isa = PBXBuildFile; fileRef = 36376110245C799700D5538D /* ArabicSpelling.txt */; };
+		3674C529245A048A003601C3 /* LipNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3674C528245A048A003601C3 /* LipNet.mlmodel */; };
+		3674C52B245A0A2A003601C3 /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3674C52A245A0A2A003601C3 /* FrameExtractor.swift */; };
 		36A7F29F24579B6600A6D411 /* FaceLandmarksDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7F29E24579B6600A6D411 /* FaceLandmarksDetector.swift */; };
 		36A7F2A124579B8200A6D411 /* UIImage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7F2A024579B8100A6D411 /* UIImage+Scale.swift */; };
 		36A7F2A324579B9300A6D411 /* LipReadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7F2A224579B9300A6D411 /* LipReadingVC.swift */; };
 		36A7F2A524579DFB00A6D411 /* VoiceRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7F2A424579DFB00A6D411 /* VoiceRecognitionViewController.swift */; };
-		36A7F2A724579E6300A6D411 /* LipReadingModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 36A7F2A624579E6300A6D411 /* LipReadingModel.mlmodel */; };
+		36A878A32459C3CE00D0CCD1 /* DeepSpeech.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 36A878A22459C3CE00D0CCD1 /* DeepSpeech.mlmodel */; };
 		36BB2F4224561AED000B7DC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB2F4124561AED000B7DC4 /* AppDelegate.swift */; };
 		36BB2F4424561AED000B7DC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB2F4324561AED000B7DC4 /* SceneDelegate.swift */; };
 		36BB2F4624561AED000B7DC4 /* ArabicSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB2F4524561AED000B7DC4 /* ArabicSR.swift */; };
@@ -21,11 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36376110245C799700D5538D /* ArabicSpelling.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ArabicSpelling.txt; sourceTree = "<group>"; };
+		3674C528245A048A003601C3 /* LipNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = LipNet.mlmodel; sourceTree = "<group>"; };
+		3674C52A245A0A2A003601C3 /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
 		36A7F29E24579B6600A6D411 /* FaceLandmarksDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceLandmarksDetector.swift; sourceTree = "<group>"; };
 		36A7F2A024579B8100A6D411 /* UIImage+Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Scale.swift"; sourceTree = "<group>"; };
 		36A7F2A224579B9300A6D411 /* LipReadingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LipReadingVC.swift; sourceTree = "<group>"; };
 		36A7F2A424579DFB00A6D411 /* VoiceRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecognitionViewController.swift; sourceTree = "<group>"; };
-		36A7F2A624579E6300A6D411 /* LipReadingModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = LipReadingModel.mlmodel; sourceTree = "<group>"; };
+		36A878A22459C3CE00D0CCD1 /* DeepSpeech.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepSpeech.mlmodel; sourceTree = "<group>"; };
 		36BB2F3E24561AED000B7DC4 /* Arabic SR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arabic SR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BB2F4124561AED000B7DC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36BB2F4324561AED000B7DC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +53,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36A878A12459C35B00D0CCD1 /* LipReading */ = {
+			isa = PBXGroup;
+			children = (
+				3674C528245A048A003601C3 /* LipNet.mlmodel */,
+				36A7F29E24579B6600A6D411 /* FaceLandmarksDetector.swift */,
+				36A7F2A024579B8100A6D411 /* UIImage+Scale.swift */,
+				36A7F2A224579B9300A6D411 /* LipReadingVC.swift */,
+				3674C52A245A0A2A003601C3 /* FrameExtractor.swift */,
+			);
+			path = LipReading;
+			sourceTree = "<group>";
+		};
+		36A878A42459C3D200D0CCD1 /* VoiceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				36A878A22459C3CE00D0CCD1 /* DeepSpeech.mlmodel */,
+				36A7F2A424579DFB00A6D411 /* VoiceRecognitionViewController.swift */,
+				36376110245C799700D5538D /* ArabicSpelling.txt */,
+			);
+			path = VoiceRecognition;
+			sourceTree = "<group>";
+		};
+		36A878A52459C43300D0CCD1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				36BB2F4124561AED000B7DC4 /* AppDelegate.swift */,
+				36BB2F4324561AED000B7DC4 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		36BB2F3524561AED000B7DC4 = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +103,11 @@
 		36BB2F4024561AED000B7DC4 /* Arabic Speech Recognition */ = {
 			isa = PBXGroup;
 			children = (
-				36A7F2A624579E6300A6D411 /* LipReadingModel.mlmodel */,
-				36BB2F4124561AED000B7DC4 /* AppDelegate.swift */,
-				36A7F29E24579B6600A6D411 /* FaceLandmarksDetector.swift */,
-				36BB2F4324561AED000B7DC4 /* SceneDelegate.swift */,
-				36A7F2A024579B8100A6D411 /* UIImage+Scale.swift */,
-				36A7F2A224579B9300A6D411 /* LipReadingVC.swift */,
-				36BB2F4524561AED000B7DC4 /* ArabicSR.swift */,
 				36BB2F4724561AED000B7DC4 /* Main.storyboard */,
-				36A7F2A424579DFB00A6D411 /* VoiceRecognitionViewController.swift */,
+				36BB2F4524561AED000B7DC4 /* ArabicSR.swift */,
+				36A878A42459C3D200D0CCD1 /* VoiceRecognition */,
+				36A878A12459C35B00D0CCD1 /* LipReading */,
+				36A878A52459C43300D0CCD1 /* AppDelegate */,
 				36BB2F4A24561AED000B7DC4 /* Assets.xcassets */,
 				36BB2F4C24561AED000B7DC4 /* LaunchScreen.storyboard */,
 				36BB2F4F24561AED000B7DC4 /* Info.plist */,
@@ -140,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36376111245C799700D5538D /* ArabicSpelling.txt in Resources */,
 				36BB2F4E24561AED000B7DC4 /* LaunchScreen.storyboard in Resources */,
 				36BB2F4B24561AED000B7DC4 /* Assets.xcassets in Resources */,
 				36BB2F4924561AED000B7DC4 /* Main.storyboard in Resources */,
@@ -153,12 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3674C529245A048A003601C3 /* LipNet.mlmodel in Sources */,
+				3674C52B245A0A2A003601C3 /* FrameExtractor.swift in Sources */,
 				36A7F2A324579B9300A6D411 /* LipReadingVC.swift in Sources */,
 				36A7F29F24579B6600A6D411 /* FaceLandmarksDetector.swift in Sources */,
 				36BB2F4624561AED000B7DC4 /* ArabicSR.swift in Sources */,
+				36A878A32459C3CE00D0CCD1 /* DeepSpeech.mlmodel in Sources */,
 				36BB2F4224561AED000B7DC4 /* AppDelegate.swift in Sources */,
 				36A7F2A124579B8200A6D411 /* UIImage+Scale.swift in Sources */,
-				36A7F2A724579E6300A6D411 /* LipReadingModel.mlmodel in Sources */,
 				36A7F2A524579DFB00A6D411 /* VoiceRecognitionViewController.swift in Sources */,
 				36BB2F4424561AED000B7DC4 /* SceneDelegate.swift in Sources */,
 			);

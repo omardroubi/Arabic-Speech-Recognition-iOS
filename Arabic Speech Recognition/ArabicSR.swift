@@ -12,14 +12,11 @@ class ArabicSR: UIViewController {
 
     @IBOutlet weak var imageIcon: UIImageView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.imageIcon.layer.cornerRadius = imageIcon.frame.height / 2.0
-
         self.imageIcon.layer.masksToBounds = true
     }
-
 }
 

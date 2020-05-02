@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,9 +12,77 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Fadi Karameh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHh-p2-8TH">
+                                <rect key="frame" x="20" y="517" width="139" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advisors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vq0-sg-EDU">
+                                <rect key="frame" x="167.5" y="485" width="79" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Rouwaida Kanj" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwH-LN-B0a">
+                                <rect key="frame" x="247" y="517" width="147" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="American University of Beirut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBl-Op-zk2">
+                                <rect key="frame" x="87" y="549" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arabic Speech Recognition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNe-R3-DTw">
+                                <rect key="frame" x="79.5" y="315" width="255" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ruba Nakkouzi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOO-hy-cbl">
+                                <rect key="frame" x="142" y="347" width="130" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jana Taan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEF-l8-58I">
+                                <rect key="frame" x="163" y="379" width="88" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Omar Droubi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="st8-EL-elV">
+                                <rect key="frame" x="151.5" y="411" width="111" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nNe-R3-DTw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4Ep-t8-pRs"/>
+                            <constraint firstItem="yBl-Op-zk2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4bm-UD-zN5"/>
+                            <constraint firstItem="st8-EL-elV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GZq-Jy-JoC"/>
+                            <constraint firstItem="st8-EL-elV" firstAttribute="top" secondItem="QEF-l8-58I" secondAttribute="bottom" constant="8" id="GjN-bc-oWN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BwH-LN-B0a" secondAttribute="trailing" constant="20" id="HYH-7b-zZd"/>
+                            <constraint firstItem="iHh-p2-8TH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mfc-uk-Hja"/>
+                            <constraint firstItem="nNe-R3-DTw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="271" id="RVz-E2-Yva"/>
+                            <constraint firstItem="iHh-p2-8TH" firstAttribute="top" secondItem="vq0-sg-EDU" secondAttribute="bottom" constant="8" id="S0B-Gu-Xsb"/>
+                            <constraint firstItem="vq0-sg-EDU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XQG-Ve-JOU"/>
+                            <constraint firstItem="QEF-l8-58I" firstAttribute="top" secondItem="wOO-hy-cbl" secondAttribute="bottom" constant="8" id="cXY-sG-nLA"/>
+                            <constraint firstItem="vq0-sg-EDU" firstAttribute="top" secondItem="st8-EL-elV" secondAttribute="bottom" constant="50" id="cuJ-bC-zdt"/>
+                            <constraint firstItem="wOO-hy-cbl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hms-zZ-yhd"/>
+                            <constraint firstItem="QEF-l8-58I" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kWs-Ml-CeJ"/>
+                            <constraint firstItem="BwH-LN-B0a" firstAttribute="top" secondItem="vq0-sg-EDU" secondAttribute="bottom" constant="8" id="n7g-qj-Xbm"/>
+                            <constraint firstItem="yBl-Op-zk2" firstAttribute="top" secondItem="iHh-p2-8TH" secondAttribute="bottom" constant="8" id="qYL-n7-08Q"/>
+                            <constraint firstItem="wOO-hy-cbl" firstAttribute="top" secondItem="nNe-R3-DTw" secondAttribute="bottom" constant="8" id="zH1-Kq-tW1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

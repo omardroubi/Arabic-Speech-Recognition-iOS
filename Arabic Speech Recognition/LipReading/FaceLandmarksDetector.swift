@@ -1,9 +1,9 @@
 //
-//  FaceLandmarksDetector.swift
-//  DetectFaceLandmarks
+//  FrameExtractor.swift
+//  Arabic Speech Recognition
 //
-//  Created by mathieu on 09/07/2017.
-//  Copyright © 2017 mathieu. All rights reserved.
+//  Created by Omar Droubi on 4/29/20.
+//  Copyright © 2020 Omar Droubi. All rights reserved.
 //
 
 import UIKit
