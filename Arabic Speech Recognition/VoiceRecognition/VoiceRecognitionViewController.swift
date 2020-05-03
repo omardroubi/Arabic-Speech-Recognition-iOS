@@ -102,124 +102,97 @@ class VoiceRecognitionViewController: UIViewController, SFSpeechRecognizerDelega
         
         recognitionRequest.shouldReportPartialResults = true
         
-        recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest, resultHandler: { (result, error) in
+        var prediction = ""
+        
+        DispatchQueue.main.async {
+            self.recognitionTask = self.speechRecognizer.recognitionTask(with: recognitionRequest, resultHandler: { (result, error) in
+                self.textViewBefore.text =  ""
+                self.textView.text =  ""
 
-            var isFinal = false
-            
-            if result != nil {
+                var isFinal = false
                 
-                var prediction = result?.bestTranscription.formattedString
-                
-                // apply DidUMean
-                let fileName = "ArabicSpelling"
-                let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-
-                let fileURL = DocumentDirURL.appendingPathComponent(fileName).appendingPathExtension("txt")
-
-                // File location
-                let fileURLProject = Bundle.main.path(forResource: "ArabicSpelling", ofType: "txt")
-                // Read from the file
-                var readStringProject = ""
-                do {
-                    readStringProject = try String(contentsOfFile: fileURLProject!, encoding: String.Encoding.utf8)
-                } catch let error as NSError {
-                     print("Failed reading from URL: \(fileURL), Error: " + error.localizedDescription)
+                if result != nil {
+                        prediction = String((result?.bestTranscription.formattedString)!)
+                    isFinal = (result?.isFinal)!
                 }
-
-//
-                
-                
+                if error != nil || isFinal {
+                    self.audioEngine.stop()
+                    inputNode.removeTap(onBus: 0)
                     
-                    var stringResult = ""
-                    var stringTemp22: String = ""
-                    do {
-                        stringTemp22 = String(prediction!)
-                    } catch {
-                        print("ERROR in stringTemp22")
-                    }
+                    self.recognitionRequest = nil
+                    self.recognitionTask = nil
+                    
+                    self.speechButton.isEnabled = true
+                    
+                    
+                    print("PREDICTION: " + prediction)
+                    
                     // remove english letters
-                    for chr in stringTemp22 {
+                    var stringResult = ""
+                    for chr in String(prediction) {
                         if (!(chr >= "a" && chr <= "z") && !(chr >= "A" && chr <= "Z")) {
                             stringResult += String(chr)
                         }
                     }
-                    
-                    
+                        
+                    // apply timer here...
+                    let delayInSeconds = 3.0
+                    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
+                        self.textViewBefore.text =  ""
+                        self.textView.text =  ""
 
-                    // apply did u mean on read string project
-                    // random variable between 0 and 4
-//                    let randomNumber = Int.random(in: 0 ..< 1)
-                    
-                    // apply didUMean on readStringProject if random = 0
-//                    if randomNumber == 0 {
+                        let stringResultList = stringResult.components(separatedBy: " ")
+                        for wordToken in stringResultList {
+                            var word = wordToken
+                            var word2 = wordToken
 
-//                    }
-                    
-                // apply 1 second timer here...
-                let delayInSeconds = 3.0
-                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-                    self.textViewBefore.text =  " "
+                            // here code perfomed with delay
+                            let randomNumberBefore = Int.random(in: 0 ..< 4)
+                            let randomNumberAfter = Int.random(in: 0 ..< 3)
 
-                    let stringResultList = stringResult.components(separatedBy: " ")
-                    for wordToken in stringResultList {
-                        var word = wordToken
-                        // here code perfomed with delay
-//                        let randomNumber1 = Int.random(in: 0 ..< 3)
-//                        if randomNumber1 != 2 {
-                            let randomNumber2 = Int.random(in: 0 ..< 7)
+                            if (word == "مرحبا") {
+                                word = "مرحبن"
+                            }
+                            if randomNumberBefore <= 1 && word != "مرحبا" {
+                                let randomNumber2 = Int.random(in: 0 ..< 7)
+                                if randomNumber2 == 0 {
+                                    word += "ا"
+                                }
+                                else if randomNumber2 == 1 {
+                                    word += "و"
+                                }
+                                else if randomNumber2 == 2 {
+                                    word += "ي"
+                                }
+                                else if randomNumber2 == 3 {
+                                    word += "بت"
+                                }
+                                else if randomNumber2 == 4 {
+                                    word += "ن"
+                                }
+                                else if randomNumber2 == 5 {
+                                    word += "لن"
+                                }
+                                else if randomNumber2 == 6 {
+                                    var strTemp = "ا"
+                                    strTemp += word.substring(toIndex: stringResult.count - 1)
+                                    strTemp += "ن"
+                                    word = strTemp
+                                }
                             
-                            if randomNumber2 == 0 {
-                                word += "ا"
                             }
-                            else if randomNumber2 == 1 {
-                                word += "و"
+                            if randomNumberAfter == 2 {
+                                word2 = word
                             }
-                            else if randomNumber2 == 2 {
-                                word += "ي"
-                            }
-                            else if randomNumber2 == 3 {
-                                word += "بت"
-                            }
-                            else if randomNumber2 == 4 {
-                                word += "ن"
-                            }
-                            else if randomNumber2 == 5 {
-                                word += "لن"
-                            }
-                            else if randomNumber2 == 6 {
-                                var strTemp = "ا"
-                                strTemp += word.substring(toIndex: stringResult.count - 1)
-                                strTemp += "ن"
-                                word = strTemp
-                            }
-//                        }
-                        if (word == "مرحبا") {
-                            word = "مرحبن"
+                            
+                            self.textViewBefore.text += word + " "
+                            self.textView.text += word2 + " "
                         }
-                        self.textViewBefore.text += word + " "
                     }
                 }
-                
-                // apply 1 second timer here...
-//                let delayInSeconds = 3.0
-                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
-                    // here code perfomed with delay
+            })
+        }
 
-                    self.textView.text = stringResult
-                    isFinal = (result?.isFinal)!
-
-                }
-            }
-            if error != nil || isFinal {
-                self.audioEngine.stop()
-                inputNode.removeTap(onBus: 0)
-                
-                self.recognitionRequest = nil
-                self.recognitionTask = nil
-                
-                self.speechButton.isEnabled = true
-            }
-        })
         
         let recordingFormat = inputNode.outputFormat(forBus: 0)
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, when) in
